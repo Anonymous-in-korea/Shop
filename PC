@@ -1,0 +1,15 @@
+package Shop;
+
+public class PC extends Product {
+
+	PC() {
+		this("PC", 50, 5);
+	}
+	
+	PC( String name, int price, int bonusPoint ) {
+		this.productName = name;
+		this.price = price;
+		this.bonusPoint = bonusPoint;
+	}
+	
+}//class
