@@ -1,0 +1,40 @@
+package Shop;
+
+import java.util.Scanner;
+
+public class ShopMain {
+
+	Scanner sc = new Scanner(System.in);
+	int choice, myMoney, myBonus;
+	String name;
+	
+	ShopMain() {}
+	
+	int mainScreen() {
+		
+		System.out.println("1. 회원정보입력");
+		System.out.println("2. TV구매");
+		System.out.println("3. PC구매");
+		System.out.println("4. 세탁기구매");
+		System.out.println("5. 구매내역");
+		System.out.println("6. 잔액확인");
+		System.out.println("0. 구매종료");
+		System.out.println("-------------------");
+		System.out.println("원하는 항목의 번호를 입력해주세요.");
+		choice = sc.nextInt();
+		System.out.println();
+		
+		return choice;
+		
+	}//mainScreen
+	
+	void member() {
+		
+		System.out.print("구매자의 이름을 입력해주세요 : ");
+		this.name = sc.next();
+		System.out.print("충전할 금액을 입력해주세요 : ");
+		this.myMoney = sc.nextInt();
+		
+	}//member
+	
+}//class
