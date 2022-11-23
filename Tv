@@ -1,0 +1,15 @@
+package Shop;
+
+public class Tv extends Product {
+
+	Tv() {
+		this("TV", 100, 10);
+	}
+	
+	Tv(String name, int price, int bonusPoint ) {
+		this.productName = name;
+		this.price = price;
+		this.bonusPoint = bonusPoint;
+	}
+	
+}//class
