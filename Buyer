@@ -1,0 +1,21 @@
+package Shop;
+
+public class Buyer {
+
+	int myMoney, myBonus;
+	String name;
+	
+	Buyer() {}
+	
+	Buyer(String name, int myMoney, int myBonus) {
+		this.name = name;
+		this.myMoney = myMoney;
+		this.myBonus = myBonus;
+	}
+	
+	void Buy(Product p) {
+		myMoney -= p.price;
+		myBonus += p.bonusPoint;
+	}
+	
+}//class
