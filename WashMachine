@@ -1,0 +1,15 @@
+package Shop;
+
+public class WashMachine extends Product {
+
+	WashMachine() {
+		this("세탁기", 100, 10);
+	}
+	
+	WashMachine(String name, int price, int bonusPoint) {
+		this.productName = name;
+		this.price = price;
+		this.bonusPoint = bonusPoint;
+	}
+	
+}//class
