@@ -1,0 +1,9 @@
+package Shop;
+
+public class Product {
+
+	int price;
+	int bonusPoint;
+	String productName;
+	
+}//class
